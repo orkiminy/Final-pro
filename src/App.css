@@ -1,10 +1,24 @@
-.App {
+.title{
   text-align: center;
+  font-family: 'Recursive', sans-serif;
+  font-size: 150px;
+  font-weight: 600;
+  font-weight: bold;
+  padding: 90px;
+  
+
+
+}
+.App {
+  padding: 90px;
+  text-align: center;
+  background-color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -40,6 +54,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 .main{
+    display: inline-block;
+    text-align: center;
     width: 700px;
     border-radius: 20px;
     background-color: #01579b;
@@ -57,9 +73,17 @@
 }
 
 .header{
-    background-color: #424242;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 5px;
+  margin: 10px;
+  text-align: center;
+  
+  font-weight: bold;
+  font-size: 50px;
+    background-color: blue;
     color: whitesmoke;
-    margin: 10px 0px 0px 10px;
+    
     font-size: 25px;
     border-radius: 20px 20px 0 0;
     font-family: 'Recursive', sans-serif;
@@ -85,7 +109,7 @@
     justify-content: space-between;
 }
 
-.sunrise-sunset{
+.sunrise-sunset-curr{
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
@@ -103,4 +127,21 @@
 .button{
     width: 35px;
     height: 35px;
+}
+
+.footer{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: white;
+}
+
+.update{
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+
+
 }

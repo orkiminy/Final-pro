@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import React, { useEffect, useState } from "react";
 import Weather from './components/weather';
 export default function App() {
@@ -22,19 +23,20 @@ export default function App() {
   }, [lat,long])
   
   return (
-    <div className="App">
+    <div className='body'>
+    <div className='title'>Weather</div>
       <div className="App">
-        {(typeof data.main != 'undefined') ? (
-          <Weather weatherData={data}/>
-        ): (
-          <div>
-           {/* <Dimmer active>
-            <Loader>Loading..</Loader>
-        </Dimmer>*/}
-        Loading
+          {(typeof data.main != 'undefined') ? (
+            <Weather weatherData={data}/>
+          ): (
+            <div>
+          Loading
+            </div>
+            )}
+          <div className='footer'>
+            <Footer></Footer>
           </div>
-          )}
-      </div>     
+      </div>
     </div>
   
   );
